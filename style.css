@@ -1,0 +1,145 @@
+:root {
+    --dark-pastel-red:#C23B22;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family:PeachesForBreakfast;
+    src:url("fonts/PeachesForBreakfast-Regular.otf");
+}
+
+@font-face {
+    font-family:Budidaya;
+    src:url("fonts/budidaya.regular.otf");
+}
+
+@font-face {
+    font-family:NexaRust;
+    src:url("fonts/NexaRustHandmade-Extended.otf");
+}
+
+@font-face {
+    font-family:NexaRustExtras;
+    src:url("fonts/NexaRustExtras-Free.otf");
+}
+
+body {
+    font-family: "Budidaya", sans-serif;
+}
+
+nav {
+    width:100%;
+    padding:1rem;
+    background:var(--dark-pastel-red);
+    display:flex;
+    justify-content: space-between;
+    gap:2rem;
+}
+
+nav>h1 {
+    color:white;
+    font-size: 2rem;
+    flex-grow: 5;
+}
+
+nav>ul {
+    display:flex;
+    flex-grow:1;
+    justify-content: space-between;
+    list-style-type: none;
+    align-items: center;
+}
+
+nav>ul>li>a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.25rem;
+}
+
+nav>ul>li>a:hover {
+    text-decoration:underline;
+}
+
+#hero {
+    width:100%;
+    height:33vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap:0.5rem;
+    font-family:"NexaRust", sans-serif;
+}
+
+#hero>h1 {
+    font-size:4rem;
+}
+
+#recipes {
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+    padding:2rem 16rem;
+    gap:1.5rem;
+    background:#eee;
+}
+
+#recipes>#recipe {
+    padding:0.5rem;
+    display:flex;
+    flex-direction: column;
+    gap:0.5rem;
+    justify-content: center;
+    align-items: baseline;
+    border:2px solid rgba(0,0,0,0);
+}
+
+#recipes>#recipe:hover {
+    border:2px dotted black;
+    cursor: pointer;
+}
+
+#recipes>#recipe>img {
+    max-width:16rem;
+}
+
+#recipes>#recipe>a {
+    text-decoration: none;
+    color:black;
+}
+
+#recipes>#recipe>#rating>#ratings-num {
+    color:grey;
+    font-size:0.75rem;
+
+}
+
+#recipes>#recipe>#rating>#rating-stars {
+    color:var(--dark-pastel-red);
+}
+
+#recipes>#recipe>#rating {
+    display:flex;
+    gap:0.75rem;
+    justify-content: baseline;
+    align-items: center;
+}
+
+footer {
+    width:100%;
+    padding:2rem 24rem;
+    margin-top:100rem;
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background:var(--dark-pastel-red);
+    color:white;
+    position: fixed;
+    bottom:0px;
+}
