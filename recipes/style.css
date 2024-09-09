@@ -34,6 +34,9 @@
     src:url("../fonts/Nunito-VariableFont_wght.ttf");
 }
 
+h2 {
+    color:var(--dark-pastel-red);
+}
 
 /*     
 
@@ -55,6 +58,15 @@ header>div#cookies {
     height:100%;
     width:25%;
     background: url("../images/cookies.webp") 0 0 / cover no-repeat;
+    display:inline;
+}
+
+header>div#pudding {
+    height:100%;
+    font-size:4rem;
+    height:100%;
+    width:25%;
+    background: url("../images/pudding_cake.webp") 0 0 / cover no-repeat;
     display:inline;
 }
 
@@ -199,7 +211,7 @@ aside>#try-next-list>li {
     font-weight:600;
 }
 
-#ingredients {
+#ingredients, #ingredients ul {
     font-family:"Nunito", sans-serif;
     padding-left: 1rem;
     list-style:none ;
@@ -209,10 +221,14 @@ aside>#try-next-list>li {
     font-family:"Nunito", sans-serif;
 }
 
-#ingredients li span {
+#ingredients li span, #ingredients ul li span {
     color: var(--dark-pastel-red);
     font-family:"Nunito", sans-serif;
     font-weight: 700;
+}
+
+#ingredients ul li span {
+    padding-left:1rem;
 }
 
 #steps {
