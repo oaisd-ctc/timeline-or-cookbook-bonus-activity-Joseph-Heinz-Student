@@ -1,0 +1,247 @@
+:root {
+    --dark-pastel-red:#C23B22;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Budidaya", sans-serif;
+}
+
+@font-face {
+    font-family:PeachesForBreakfast;
+    src:url("../fonts/PeachesForBreakfast-Regular.otf");
+}
+
+@font-face {
+    font-family:Budidaya;
+    src:url("../fonts/budidaya.regular.otf");
+}
+
+@font-face {
+    font-family:NexaRust;
+    src:url("../fonts/NexaRustHandmade-Extended.otf");
+}
+
+@font-face {
+    font-family:NexaRustExtras;
+    src:url("../fonts/NexaRustExtras-Free.otf");
+}
+
+@font-face {
+    font-family:Nunito;
+    src:url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
+
+/*     
+
+HEADER STYLING
+
+*/
+header {
+    width:100%;
+    height:25vh;
+    background:#eee;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+header>div#cookies {
+    height:100%;
+    font-size:4rem;
+    height:100%;
+    width:25%;
+    background: url("../images/cookies.webp") 0 0 / cover no-repeat;
+    display:inline;
+}
+
+.recipe-overview {
+    padding:2rem;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:0.75rem;
+    border:2px solid #eee;
+    border-radius:0 0 1rem 1rem;
+}
+
+.recipe-overview>h1 {
+    color:var(--dark-pastel-red);
+    font-size:2rem;
+    text-align: center;
+}
+
+.overview-tested {
+    color:#66f;
+}
+
+#rating>#ratings-num {
+    color:grey;
+    font-size:0.75rem;
+
+}
+
+#rating>#rating-stars {
+    color:var(--dark-pastel-red);
+}
+
+#rating {
+    display:flex;
+    gap:0.75rem;
+    justify-content: baseline;
+    align-items: center;
+}
+
+.recipe-info {
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: stretch;
+    text-align: center;
+}
+
+.vl {
+    border-left:2px dashed #eee;
+}
+
+.recipe-info div h3 {
+    color:var(--dark-pastel-red);
+}
+
+.extras { font-family: 'NexaRustExtras';font-size:1.5rem; }
+
+
+
+/*
+
+BODY STYLING
+
+*/
+
+
+main {
+    width:100%;
+    padding:4rem 3rem;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: start;
+}
+
+main>h1 {
+    color: var(--dark-pastel-red);
+}
+
+aside {
+    height:100%;
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    justify-content:start;
+    align-items: start;
+    gap:1rem;
+    padding:1.5rem;
+}
+
+aside>h1 {
+    color:var(--dark-pastel-red);
+}
+
+aside>#try-next-list {
+    list-style-type: none;
+}
+
+aside>#try-next-list>li>a>img {
+    max-width:200px;
+    margin:auto;
+}
+
+aside>#try-next-list>li {
+    border:1px solid white;
+    padding:0.25rem;
+}
+
+aside>#try-next-list>li>a {
+    text-decoration: none;
+    color:black;
+    font-size:1rem;
+}
+
+aside>#try-next-list>li:hover {
+    text-decoration: none;
+    color:black;
+    font-size:1rem;
+    border:1px dashed black;
+}
+
+aside>#try-next-list>li {
+    margin-bottom:4rem;
+}
+
+
+#main {
+    width:50%;
+    background:white;
+    padding:1.5rem;
+}
+
+#main h1 {
+    color:var(--dark-pastel-red);
+}
+
+#main p {
+    font-family: "Nunito";
+    font-size:1rem;
+    font-weight:600;
+}
+
+#ingredients {
+    font-family:"Nunito", sans-serif;
+    padding-left: 1rem;
+    list-style:none ;
+}
+
+#ingredients li {
+    font-family:"Nunito", sans-serif;
+}
+
+#ingredients li span {
+    color: var(--dark-pastel-red);
+    font-family:"Nunito", sans-serif;
+    font-weight: 700;
+}
+
+#steps {
+    display:flex;
+    flex-direction: column;
+    gap:2rem;
+    justify-content: stretch;
+    align-items: start;
+    padding:2rem;
+}
+
+#steps .step .step-num {
+    color:var(--dark-pastel-red);
+    font-size: 1.25rem;
+    font-weight:900;
+}
+
+#steps .step span {
+    font-family: "Nunito", sans-serif;
+}
+
+#steps .step .step-top {
+    display:flex;
+    align-items: start;
+    justify-content: center;
+    gap:0.5rem;
+    max-width:450px;
+}
+
+#steps .step img {
+    padding-left:2rem;
+}
