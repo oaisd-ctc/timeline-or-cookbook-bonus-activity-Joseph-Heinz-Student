@@ -28,6 +28,11 @@
     src:url("fonts/NexaRustExtras-Free.otf");
 }
 
+@font-face {
+    font-family:Nunito;
+    src:url("../fonts/Nunito-VariableFont_wght.ttf");
+}
+
 body {
     font-family: "Budidaya", sans-serif;
 }
@@ -134,12 +139,93 @@ nav>ul>li>a:hover {
 footer {
     width:100%;
     padding:2rem 24rem;
-    margin-top:100rem;
     display:flex;
     justify-content: space-between;
-    align-items: baseline;
+    align-items: start;
     background:var(--dark-pastel-red);
     color:white;
-    position: fixed;
     bottom:0px;
 }
+
+#columns {
+    display:flex;
+    flex-direction: column;
+}
+
+footer>#footer-info {
+    height:100%;
+    gap:2rem;
+}
+
+#footer-sitemap ul{
+    list-style: none;
+    color:white;
+}
+
+#footer-sitemap ul li a {
+    text-decoration: none;
+    color:white;
+}
+
+#footer-sitemap ul li a:hover {
+    text-decoration: underline;
+}
+
+#footer-sitemap .sitemap-lists {
+    display:flex;
+    gap:1rem;
+}
+
+#reviews {
+    padding:2rem;
+    display:flex;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    gap:1.5rem;
+    align-items: start;
+    justify-content: space-evenly;
+}
+
+#reviews>.review {
+    padding:1rem;
+    background:#eee;
+    border-radius: 0.25rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap:0.25rem;
+}
+
+#reviews>.review>.review-top {
+    width:100%;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+    gap:1rem;
+}
+
+#reviews>.review>.review-top>.review-name {
+    font-family: "Nunito", sans-serif;
+    font-weight: 800;
+} 
+
+#reviews>.review>.review-top>.review-date {
+    font-family: "Nunito", sans-serif;
+    font-weight: 500;
+    color:#555;
+    font-size:0.75rem;
+}
+
+#reviews>.review>#rating>#rating-stars {
+    color:var(--dark-pastel-red);
+}
+
+#reviews>.review>.review-content {
+    max-width:350px;
+    min-width:300px;
+    text-wrap:pretty;
+    font-family: "Nunito", sans-serif;
+    font-weight: 600;
+}
+

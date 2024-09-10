@@ -70,6 +70,24 @@ header>div#pudding {
     display:inline;
 }
 
+header>div#applebars {
+    height:100%;
+    font-size:4rem;
+    height:100%;
+    width:25%;
+    background: url("../images/applebars.webp") 0 0 / cover no-repeat;
+    display:inline;
+}
+
+header>div#pie {
+    height:100%;
+    font-size:4rem;
+    height:100%;
+    width:25%;
+    background: url("../images/pie.webp") 0 0 / cover no-repeat;
+    display:inline;
+}
+
 .recipe-overview {
     padding:2rem;
     background-color: white;
